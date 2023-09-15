@@ -9,7 +9,7 @@ public interface EmpService {
     public Employee save(Employee emp);
     public List<Employee> getAllEmp();
     public Employee getById(long id);
-    public Employee update(Employee emp,long id) throws ResourceNotFound;
+    public Employee update(Employee emp,long id) ;
     public String delete(long id);
 
 }

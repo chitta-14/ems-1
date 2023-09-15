@@ -38,7 +38,7 @@ public class EmpServiceImpl implements EmpService{
     }
 
     @Override
-    public Employee update(Employee emp, long id) throws ResourceNotFound {
+    public Employee update(Employee emp, long id){
         Employee existingEmp=empRepo.findById(id).orElseThrow(()->
          new ResourceNotFound("Employee","id",id));
         existingEmp.setFirstName(emp.getFirstName());
